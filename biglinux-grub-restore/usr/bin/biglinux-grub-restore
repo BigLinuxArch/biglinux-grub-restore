@@ -1,0 +1,20 @@
+#!/bin/bash
+##################################
+#  BigLinux GRUB Restore Launcher
+#  Author: Bruno Goncalves (www.biglinux.com.br) 
+#  Author: Tales A. Mendonça (communitybig.org) 
+#  Date: 2024
+#  
+#  Description: Simple launcher for Python GTK4 GRUB restore tool
+#  
+# Licensed by GPL V2 or greater
+##################################
+
+# Change to application directory
+cd /usr/share/biglinux/grub-restore
+
+# Permission to root use graphical apps
+xhost +si:localuser:root
+
+# Execute the Python application
+exec python main.py "$@"
