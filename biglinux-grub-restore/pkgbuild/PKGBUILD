@@ -1,14 +1,14 @@
 # Maintainer: Bruno Goncalves <bigbruno@gmail.com>
 
 pkgname=biglinux-grub-restore
-pkgver=$(date +%y.%m.%d)
-pkgrel=$(date +%H%M)
+pkgver=25.09.11
+pkgrel=0723
 arch=('any')
 license=('GPL')
 url="https://github.com/biglinux/biglinux-grub-restore"
 pkgdesc="Restore your installed system"
-depends=('libadwaita' 'gtk4' 'python' 'python-gobject' 'vte4' 'mkinitcpio' 'grub' 'os-prober'  'pacman' 'util-linux' 'xorg-xhost')
-source=("git+https://github.com/biglinux/biglinux-grub-restore.git")
+depends=('libadwaita' 'gtk4' 'python' 'python-gobject' 'vte4' 'mkinitcpio' 'grub' 'os-prober' 'pamac-cli' 'pacman' 'util-linux' 'manjaro-tools-base' 'xorg-xhost')
+source=("git+https://github.com/biglinux/biglinux-grub-restore.git#branch=stable-2025-09-11_04-16")
 md5sums=(SKIP)
 
 package() {
